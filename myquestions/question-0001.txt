@@ -1,0 +1,16 @@
+Problema 0001 (pandas)
+
+Recibes un DataFrame con eventos de transaccion que puede contener fechas invalidas, valores faltantes y dias sin movimiento para algunos grupos.
+
+Escribe una funcion llamada construir_panel_diario(df, fecha_col, grupo_col, valor_col) que haga exactamente lo siguiente:
+
+1) Convierta la columna fecha_col a tipo datetime usando errors='coerce'.
+2) Elimine filas con fecha invalida (NaT) o con valores faltantes en grupo_col o valor_col.
+3) Agregue la suma diaria de valor_col por fecha y grupo.
+4) Construya un panel completo diario para todas las fechas entre la minima y la maxima fecha validas, y para todos los grupos validos observados.
+5) Rellene con 0.0 las combinaciones fecha-grupo que no existan en los datos originales.
+6) Devuelva un DataFrame con columnas [fecha_col, grupo_col, 'valor_total'], ordenado por grupo_col y luego por fecha_col, con indice reiniciado.
+
+Notas:
+- Si despues de limpiar no quedan filas validas, devuelve un DataFrame vacio con columnas [fecha_col, grupo_col, 'valor_total'].
+- No modifiques el DataFrame de entrada en sitio.

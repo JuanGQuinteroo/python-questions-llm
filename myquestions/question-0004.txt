@@ -1,0 +1,24 @@
+Problema 0004 (sklearn)
+
+Recibes una matriz X para clasificacion binaria y su vector objetivo y.
+
+Escribe una funcion llamada pipeline_clasificacion_balanceada(X, y, test_size, random_state) que haga exactamente lo siguiente:
+
+1) Divida X e y en entrenamiento y prueba con train_test_split, usando:
+   - test_size=test_size
+   - random_state=random_state
+   - stratify=y
+2) Construya un Pipeline con dos pasos:
+   - StandardScaler
+   - LogisticRegression(max_iter=500, class_weight='balanced', random_state=random_state)
+3) Entrene el pipeline con el conjunto de entrenamiento.
+4) Prediga sobre el conjunto de prueba.
+5) Calcule accuracy, f1 y confusion_matrix.
+6) Devuelva un diccionario con llaves exactas:
+   - 'accuracy': float
+   - 'f1': float
+   - 'confusion_matrix': numpy.ndarray de forma (2, 2)
+
+Notas:
+- y es binaria (0 y 1).
+- No modifiques X ni y en sitio.

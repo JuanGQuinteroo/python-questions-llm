@@ -1,0 +1,17 @@
+Problema 0003 (sklearn)
+
+Recibes una matriz numerica X de dos dimensiones y un numero de componentes principales.
+
+Escribe una funcion llamada proyectar_y_reconstruir_pca(X, n_componentes) que haga exactamente lo siguiente:
+
+1) Estandarice X con StandardScaler (media 0 y desviacion estandar 1 por columna).
+2) Ajuste un PCA con n_components=n_componentes y svd_solver='full'.
+3) Obtenga la proyeccion en el espacio reducido (X_proyectada).
+4) Reconstruya los datos al espacio original y revierta el escalado para obtener X_reconstruida en la escala original.
+5) Obtenga el vector explained_variance_ratio_ del PCA.
+6) Devuelva una tupla con tres elementos: (X_proyectada, X_reconstruida, varianza_explicada).
+
+Notas:
+- X_proyectada debe tener forma (n_muestras, n_componentes).
+- X_reconstruida debe tener la misma forma que X.
+- No modifiques X en sitio.

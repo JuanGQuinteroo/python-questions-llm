@@ -1,0 +1,18 @@
+Problema 0002 (pandas)
+
+Recibes un DataFrame de movimientos de clientes en el tiempo. Puede traer fechas invalidas, montos faltantes y varios registros por cliente en un mismo dia.
+
+Escribe una funcion llamada rankear_clientes_ventana_movil(df, cliente_col, fecha_col, monto_col, ventana) que haga exactamente lo siguiente:
+
+1) Convierta fecha_col a datetime con errors='coerce'.
+2) Elimine filas con fecha invalida o faltantes en cliente_col o monto_col.
+3) Agregue por cliente y fecha (suma de monto_col), para tener maximo una fila por cliente-fecha.
+4) Ordene por cliente y fecha.
+5) Calcule, por cada cliente, una suma movil de monto_col con ventana de tamano ventana, usando min_periods=1.
+6) Para cada fecha, seleccione el cliente con mayor suma movil.
+7) Si hay empate en una fecha, elija el cliente con menor orden alfabetico.
+8) Devuelva un DataFrame con columnas [fecha_col, cliente_col, 'suma_movil'], ordenado por fecha_col ascendente y con indice reiniciado.
+
+Notas:
+- Si no quedan datos validos tras limpieza, devuelve un DataFrame vacio con columnas [fecha_col, cliente_col, 'suma_movil'].
+- No modifiques el DataFrame de entrada en sitio.
