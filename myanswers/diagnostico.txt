@@ -1,0 +1,3 @@
+# Diagnóstico FASE 2
+
+Si alguna `answer-XXXX.py` no pasa el validador, describe aquí la razón con líneas y evidencia.
