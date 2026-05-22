@@ -1,5 +1,6 @@
 import pickle
 from pathlib import Path
+import importlib.util
 import numpy as np
 import traceback
 
@@ -19,14 +20,25 @@ def append_diag(text):
         f.write(text + '\n')
 
 
+def load_answer_module(qid):
+    dash_path = ROOT / f"answer-{qid}.py"
+    underscore_path = ROOT / f"answer_{qid}.py"
+    path = dash_path if dash_path.exists() else underscore_path
+    if not path.exists():
+        raise FileNotFoundError(f"No se encontro archivo de respuesta para {qid}: {dash_path} ni {underscore_path}")
+    module_name = f"answer_{qid}_file"
+    spec = importlib.util.spec_from_file_location(module_name, path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
 def validate_0521():
     inp = load_pickle(CASES / '0521_input.pkl')
     expected = load_pickle(CASES / '0521_output.pkl')
     try:
-        # Prefer relative import when executed as module
-        from .answer_0521 import limpiar_y_escalar
-    except Exception:
-        from myanswers.answer_0521 import limpiar_y_escalar
+        mod = load_answer_module('0521')
+        limpiar_y_escalar = mod.limpiar_y_escalar
         res = limpiar_y_escalar(inp['df'], inp['columna'])
         ok = np.allclose(res, expected, atol=1e-6, equal_nan=True)
         if not ok:
@@ -44,9 +56,8 @@ def validate_0083():
     inp = load_pickle(CASES / '0083_input.pkl')
     expected = load_pickle(CASES / '0083_output.pkl')
     try:
-        from .answer_0083 import entrenar_brazo_robotico
-    except Exception:
-        from myanswers.answer_0083 import entrenar_brazo_robotico
+        mod = load_answer_module('0083')
+        entrenar_brazo_robotico = mod.entrenar_brazo_robotico
         pipeline_mine = entrenar_brazo_robotico(inp['X'], inp['y'])
         # Try to compare predictions when possible
         preds_mine = pipeline_mine.predict(inp['X'])
@@ -73,9 +84,8 @@ def validate_0579():
     inp = load_pickle(CASES / '0579_input.pkl')
     expected = load_pickle(CASES / '0579_output.pkl')
     try:
-        from .answer_0579 import optimizar_bosque_random
-    except Exception:
-        from myanswers.answer_0579 import optimizar_bosque_random
+        mod = load_answer_module('0579')
+        optimizar_bosque_random = mod.optimizar_bosque_random
         res = optimizar_bosque_random(inp['X'], inp['y'])
         if isinstance(expected, tuple) and len(expected) >= 2:
             score_ok = abs(res[0] - expected[0]) < 1e-6
@@ -95,9 +105,8 @@ def validate_0104():
     inp = load_pickle(CASES / '0104_input.pkl')
     expected = load_pickle(CASES / '0104_output.pkl')
     try:
-        from .answer_0104 import pipeline_pca_logistico
-    except Exception:
-        from myanswers.answer_0104 import pipeline_pca_logistico
+        mod = load_answer_module('0104')
+        pipeline_pca_logistico = mod.pipeline_pca_logistico
         ncomp = inp.get('n_componentes', 0.95) if isinstance(inp, dict) else 0.95
         res = pipeline_pca_logistico(inp['X'], inp['y'], n_componentes=ncomp)
         # compare accuracy and explained_variance_ratio
