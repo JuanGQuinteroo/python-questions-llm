@@ -19,8 +19,7 @@ Entrega FASE 2 (resumen)
 
 Cómo validar localmente
 -----------------------
-Recomendado: usar Python 3.14 o `conda` para evitar compilación de paquetes.
-Si no es posible usar Python 3.14, el revisor automático debe disponer de ruedas precompiladas para los paquetes (NumPy, SciPy, scikit-learn) o aceptar que se compilen desde fuentes; en caso contrario la instalación fallará.
+Recomendado: usar Python 3.14 o Conda para evitar compilación de paquetes.
 
 1. Crear y activar virtualenv (Windows PowerShell):
 
