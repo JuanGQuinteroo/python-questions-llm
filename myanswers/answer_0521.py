@@ -26,7 +26,6 @@ def limpiar_y_escalar(df, columna):
 
 
 if __name__ == "__main__":
-    # Este bloque es de prueba local: carga el generador si existe y compara
     try:
         import pickle
         inp = pickle.load(open('myanswers/cases/0521_input.pkl','rb'))

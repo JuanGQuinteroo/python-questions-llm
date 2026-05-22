@@ -1,3 +1,117 @@
 # Diagnóstico FASE 2
 
 Si alguna `answer-XXXX.py` no pasa el validador, describe aquí la razón con líneas y evidencia.
+
+--- Validación automática: Iniciada ---
+0521: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 26, in validate_0521
+    from myanswers.answer_0521 import limpiar_y_escalar
+ModuleNotFoundError: No module named 'myanswers'
+
+0083: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 44, in validate_0083
+    from myanswers.answer_0083 import entrenar_brazo_robotico
+ModuleNotFoundError: No module named 'myanswers'
+
+0579: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 71, in validate_0579
+    from myanswers.answer_0579 import optimizar_bosque_random
+ModuleNotFoundError: No module named 'myanswers'
+
+0104: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 91, in validate_0104
+    from myanswers.answer_0104 import pipeline_pca_logistico
+ModuleNotFoundError: No module named 'myanswers'
+
+--- Validación automática: Finalizada ---
+
+
+--- Validación automática: Iniciada ---
+0521: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 26, in validate_0521
+    from myanswers.answer_0521 import limpiar_y_escalar
+ModuleNotFoundError: No module named 'myanswers'
+
+0083: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 44, in validate_0083
+    from myanswers.answer_0083 import entrenar_brazo_robotico
+ModuleNotFoundError: No module named 'myanswers'
+
+0579: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 71, in validate_0579
+    from myanswers.answer_0579 import optimizar_bosque_random
+ModuleNotFoundError: No module named 'myanswers'
+
+0104: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 91, in validate_0104
+    from myanswers.answer_0104 import pipeline_pca_logistico
+ModuleNotFoundError: No module named 'myanswers'
+
+--- Validación automática: Finalizada ---
+
+
+--- Validación automática: Iniciada ---
+0521: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 26, in validate_0521
+    from myanswers.answer_0521 import limpiar_y_escalar
+ModuleNotFoundError: No module named 'myanswers'
+
+0083: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 44, in validate_0083
+    from myanswers.answer_0083 import entrenar_brazo_robotico
+ModuleNotFoundError: No module named 'myanswers'
+
+0579: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 71, in validate_0579
+    from myanswers.answer_0579 import optimizar_bosque_random
+ModuleNotFoundError: No module named 'myanswers'
+
+0104: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 91, in validate_0104
+    from myanswers.answer_0104 import pipeline_pca_logistico
+ModuleNotFoundError: No module named 'myanswers'
+
+--- Validación automática: Finalizada ---
+
+
+--- Validación automática: Iniciada ---
+0521: Error durante validación: ModuleNotFoundError("No module named 'myanswers.answer_0521'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 26, in validate_0521
+    from myanswers.answer_0521 import limpiar_y_escalar
+ModuleNotFoundError: No module named 'myanswers.answer_0521'
+
+0083: Error durante validación: ModuleNotFoundError("No module named 'myanswers.answer_0083'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 44, in validate_0083
+    from myanswers.answer_0083 import entrenar_brazo_robotico
+ModuleNotFoundError: No module named 'myanswers.answer_0083'
+
+0579: Error durante validación: ModuleNotFoundError("No module named 'myanswers.answer_0579'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 71, in validate_0579
+    from myanswers.answer_0579 import optimizar_bosque_random
+ModuleNotFoundError: No module named 'myanswers.answer_0579'
+
+0104: Error durante validación: ModuleNotFoundError("No module named 'myanswers.answer_0104'")
+Traceback (most recent call last):
+  File "C:\Users\Juan Quintero\Downloads\LLMs\python-questions-llm\myanswers\run_validation.py", line 91, in validate_0104
+    from myanswers.answer_0104 import pipeline_pca_logistico
+ModuleNotFoundError: No module named 'myanswers.answer_0104'
+
+--- Validación automática: Finalizada ---
+
+
+--- Validación automática: Iniciada ---
