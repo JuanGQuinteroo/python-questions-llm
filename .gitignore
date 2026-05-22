@@ -1,0 +1,11 @@
+# Virtual environments
+.venv/
+.venv_fase2/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
