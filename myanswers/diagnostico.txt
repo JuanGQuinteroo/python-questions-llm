@@ -29,6 +29,11 @@ ModuleNotFoundError: No module named 'myanswers'
 
 --- Validación automática: Finalizada ---
 
+Nota sobre error de generador (ejecución en Colab, id 0513):
+- En el generador `question-0001-usecase-generator.py` (repo del compañero), la primera función definida es `segmentar_pacientes(df)` en la línea 4 y el generador real `generar_caso_de_uso_segmentar_pacientes()` aparece en la línea 27.
+- El notebook de validación toma la primera función definida y la ejecuta sin argumentos; por eso falla con: `segmentar_pacientes() missing 1 required positional argument: 'df'`.
+- El fallo es del orden/estructura del generador, no de la solución.
+
 
 --- Validación automática: Iniciada ---
 0521: Error durante validación: ModuleNotFoundError("No module named 'myanswers'")
