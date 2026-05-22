@@ -25,5 +25,5 @@ python -m myanswers.run_validation
 ```
 
 Notas:
-- La rama de trabajo es `fase2-answers`.
-- Si necesitan que haga merge o cambios menores, indíquenmelos en el PR.
+- La entrega esta en `main`.
+- Si necesitan cambios menores, indíquenmelos en el PR.

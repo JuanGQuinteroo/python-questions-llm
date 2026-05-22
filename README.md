@@ -10,7 +10,7 @@ Este repositorio contiene:
 
 Entrega FASE 2 (resumen)
 ------------------------
-- Rama de entrega: `fase2-answers` (subida al remoto).
+- Rama de entrega: `main` (subida al remoto).
 - Implementaciones: `myanswers/answer_0521.py`, `myanswers/answer_0083.py`, `myanswers/answer_0579.py`, `myanswers/answer_0104.py`.
 - Casos de prueba serializados: `myanswers/cases/` (pickles).
 - Validador automático: `myanswers/run_validation.py`.
@@ -38,7 +38,7 @@ python -m myanswers.run_validation
 
 Qué se espera del revisor automático
 -----------------------------------
-- El revisor debe ejecutar el validador en la rama `fase2-answers` y verificar que las salidas coinciden con los pickles en `myanswers/cases/`.
+- El revisor debe ejecutar el validador en la rama `main` y verificar que las salidas coinciden con los pickles en `myanswers/cases/`.
 - Si el entorno del revisor no es Python 3.14, se recomienda usar `conda create -n fase2 python=3.14`.
 
 Contacto
