@@ -127,3 +127,7 @@ Resultados finales (ejecución con .venv_fase2 / Python 3.14):
 
 Notas:
 - Las pruebas se ejecutaron usando el intérprete Python 3.14 localizado en el sistema y un virtualenv llamado `.venv_fase2` con numpy/pandas/scikit-learn instalados.
+
+--- Validación automática: Iniciada ---
+--- Validación automática: Finalizada ---
+
