@@ -115,3 +115,15 @@ ModuleNotFoundError: No module named 'myanswers.answer_0104'
 
 
 --- Validación automática: Iniciada ---
+
+--- Validación automática: Iniciada ---
+--- Validación automática: Finalizada ---
+
+Resultados finales (ejecución con .venv_fase2 / Python 3.14):
+- 0521: OK — función `limpiar_y_escalar` devuelve array numpy de longitud esperada.
+- 0083: OK — `entrenar_brazo_robotico` entrena pipeline con pasos ['transformer','model'].
+- 0579: OK — `optimizar_bosque_random` devolvió (best_score, n_estimators) consistente con el generador.
+- 0104: OK — `pipeline_pca_logistico` entrenada; accuracy en training = 0.9166666666666666; explained_variance_ratio registrado.
+
+Notas:
+- Las pruebas se ejecutaron usando el intérprete Python 3.14 localizado en el sistema y un virtualenv llamado `.venv_fase2` con numpy/pandas/scikit-learn instalados.
